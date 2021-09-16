@@ -1,0 +1,14 @@
+overwrite: true
+schema: 'http://localhost:31415/graphql'
+#documents:
+#  - './src/queries/**/*.graphql'
+#  - './src/mutations/**/*.graphql'
+documents: './src/graphql/*.gql'
+generates:
+  ./src/schema.graphql:
+    plugins:
+      - schema-ast
+  ./src/types.d.ts:
+    plugins:
+      - 'typescript'
+      - 'typescript-operations'

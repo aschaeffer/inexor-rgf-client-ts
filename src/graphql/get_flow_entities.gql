@@ -1,0 +1,49 @@
+
+query getFlowEntities {
+  flows {
+    id
+    type {
+      name
+      extensions
+    }
+    wrapper {
+      id
+      type {
+        name
+      }
+      properties
+    }
+    entities {
+      id
+      type {
+        name
+      }
+      properties
+    }
+    relations {
+      type {
+        name
+        fullName
+      }
+      properties
+      inbound {
+        id
+      }
+      outbound {
+        id
+      }
+    }
+  }
+  types {
+    components {
+      name
+      description
+      properties {
+        name
+        dataType
+        socketType
+        extensions
+      }
+    }
+  }
+}

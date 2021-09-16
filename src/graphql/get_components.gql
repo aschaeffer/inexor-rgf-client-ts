@@ -1,0 +1,14 @@
+query getComponents {
+  types {
+    components {
+      name
+      description
+      properties {
+        name
+        dataType
+        socketType
+        extensions
+      }
+    }
+  }
+}

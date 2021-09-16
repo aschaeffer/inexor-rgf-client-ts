@@ -1,0 +1,15 @@
+{
+  "name": "Inexor Reactive Graph Flow",
+  "schemaPath": "src/schema.graphql",
+  "extensions": {
+    "endpoints": {
+      "Inexor Reactive Graph Flow": {
+        "url": "http://localhost:31415/graphql",
+        "headers": {
+          "user-agent": "Inexor Reactive Graph Flow Client"
+        },
+        "introspect": false
+      }
+    }
+  }
+}
