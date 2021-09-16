@@ -1,5 +1,6 @@
 overwrite: true
-schema: 'src/schema.graphql'
+# Works only if there is an instance of inexor-rgf-application running on port 31415 (start inexor first)
+schema: 'http://localhost:31415/graphql'
 documents: './src/graphql/*.gql'
 generates:
   ./src/schema.graphql:
